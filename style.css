@@ -14,13 +14,19 @@ body {
 }
 
 .container{
-    border-radius: 25%;
+    border-radius: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 25%;
+ 
+    max-width: 35%;
 }
-
+.first {
+    float: left;
+    width: 50%;
+}
+.second {
+    float: right;
+    width: 50%;
+}
 .weird {
     border: 5px solid red;
     
@@ -34,13 +40,11 @@ body {
 .lounge {
     border:5px solid blue;
 }
-.wink {
-    border:5px solid purple;
-}
+
 p {
     color: blue;
     text-shadow: 2px 2px #ff0000;
-    text-align: center;
+    text-align: ;
 }
 ul {
     list-style: none;

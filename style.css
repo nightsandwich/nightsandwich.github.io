@@ -18,31 +18,23 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 25%;
+    border: 5px solid;
 }
 .weird {
-    width: 360px;
-    height: 240px;
-    border: 5px solid red;
+    border: red;
 }
 .foot {
-    width: 300px;
-    height: 350px;
-    border: 5px solid orange;
+    border: orange;
 }
 .loaf {
-    width: 300px;
-    height: 350px;
-    border: 5px solid green;
+    border: green;
 }
 .lounge {
-    width: 350px;
-    height: 250px;
-    border: 5px solid blue;
+    border: blue;
 }
 .wink {
-    width: 300px;
-    height: 350px;
-    border: 5px solid purple;
+    border: purple;
 }
 p {
     color: blue;

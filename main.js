@@ -106,7 +106,7 @@ function step (){
 
 document.getElementById("play_btn").addEventListener("click", event => {
   
-  setInterval(step, 400);
+  setInterval(step, 300);
   // TODO: Start playing by calling `tick` and paint
   // repeatedly every fixed time interval.
   // HINT:
@@ -143,5 +143,19 @@ document.getElementById("fun_btn").addEventListener("click", event => {
   count = 0;
   extra = 1;
   
-  setInterval(step, 400);
+  setInterval(step, 300);
+});
+
+//not working
+document.getElementById("yay_btn").addEventListener("click", event => {
+  //const coordinates = [[0,19], [0,20], [0,21], [1,20], [2,20], [3,19],[3,20],[3,21], [4,19],[4,21], [5,17], [5,18], [5,19], [5,21], [5,22], [5,23], [6,17],[6,23],[7,16],[7,17],[7,18],[7,19],[7,20],[7,21],[7,22],[7,23], [7,24],[8,17],[8,23],[9,17],[9,18],[9,19],[9,20],[9,21],[9,22][9,23], [10,20],[11,19],[11,21],[12,18],[12,22],[13,19],[13,20],[13,21]];
+  gol.board.forEach((row,idx) => {
+    if (idx === 15 || idx === 30) {
+      gol.board[idx].fill(1);
+    }
+  });
+  count = 0;
+  extra = 1;
+  
+  setInterval(step, 300);
 });

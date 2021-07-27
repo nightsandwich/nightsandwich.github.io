@@ -1,43 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cat Example</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Game of Life - Fullstack Academy</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="GameOfLife.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
+
 <body>
-    <div id="heading">
-        <h1>Inspector Pickles</h1>
-        <h2>---more than a cat---</h2> 
+  <div id="container">
+    <h1>Game of Life</h1>
+    <table id='board'></table>
+    
+    <div id='control_panel'>
+      <button id='step_btn' class='button'>Step</button>
+      <button id='play_btn' class='button'>Play</button>
+      <button id='random_btn' class='button'>Randomize Board</button>
+      <button id='clear_btn' class='button'>Clear</button>
     </div>
-    <h4>She can...</h4>
-    <ul>
-        <li>
-            <div class="first">
-                <p><a href="https://www.wikihow.com/Be-Weird">be weird</a></p>    
-                <img src="images/beweird.jpg" class="container weird">
-            </div>                
-        </li>
-        <li>
-            <div class="first">
-                <p>haz foot</p>
-                <img src="images/hazfoot.jpg" class="container foot">
-            </div>
-        </li>       
-        <li> 
-            <div class="second">
-                <p>loaf</p>
-                <img src="images/loaf.jpg" class="container loaf">
-            </div>
-        </li> 
-        <li>
-            <div class="second">
-                <p>pawz</p>
-                <img src="images/lounge.jpg" class="container lounge">
-            </div>
-        </li>
-    </ul>
     
-    
+    <footer>
+      <p>Built by Corinne at <a href="http://www.fullstackacademy.com/">Fullstack Academy</a></p>
+    </footer>
+  </div>
+  
+  
+  
 </body>
 </html>

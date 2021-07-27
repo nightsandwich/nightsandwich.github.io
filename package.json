@@ -1,0 +1,22 @@
+{
+  "name": "pairproject.game-of-life",
+  "version": "1.0.0",
+  "description": "Fullstack Academy workshop.",
+  "main": "main.js",
+  "scripts": {
+    "test": "GameOfLifeSpec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightsandwich/PairProject.Game-of-life.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nightsandwich/PairProject.Game-of-life/issues"
+  },
+  "homepage": "https://github.com/nightsandwich/PairProject.Game-of-life#readme",
+  "dependencies": {
+    "testem": "^3.4.2"
+  }
+}

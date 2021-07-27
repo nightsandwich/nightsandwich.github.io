@@ -1,0 +1,79 @@
+body {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  color: black;
+  background-color: rgba(255, 248, 220, 0.034);
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#board{
+  border-collapse: collapse;
+}
+
+#board td{
+  border: 2px dotted rgb(255, 2, 2);
+  width: 18px;
+  height: 18px;
+}
+
+td.darker{
+  background-color: #fd0505;
+}
+
+td.darker1 {
+  background-color: #fd6005;
+}
+td.darker2 {
+  background-color: #fde405;
+}
+td.darker3 {
+  background-color: #75fd05;
+}
+td.darker4 {
+  background-color: #05fd3b;
+}
+td.darker5 {
+  background-color: #05f5fd;
+}
+td.darker6 {
+  background-color: #055cfd;
+}
+td.darker7 {
+  background-color: #6405fd;
+}
+td.darker8 {
+  background-color: #f505fd;
+}
+td.darker9 {
+  background-color: #fd0579;
+}
+
+#control_panel {
+  margin: 10px 0 50px 0;
+}
+
+.button {
+  padding: 0.85em 1em;
+  border: 2px solid rgb(39, 7, 219);
+  border-radius: 3px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: dodgerblue;
+  color: #fefefe; 
+}
+
+.button:hover, .button:focus {
+  background-color: #ff0457;
+}
+
+.button:focus {
+  outline: dashed 1px black;
+}

@@ -1,5 +1,5 @@
-const width = 25;
-const height = 20; // width and height dimensions of the board
+const width = 40;
+const height = 40; // width and height dimensions of the board
 
 /**
  * Create a Game of Life instance
@@ -53,7 +53,7 @@ const paint = () => {
       if (count > 2){
         tds[i].className = 'darker' + String(extra);
         if (extra === 9) extra = 1;
-     //   else extra++;
+        else extra++;
       }
     } else tds[i].className = '';
     
@@ -124,7 +124,7 @@ document.getElementById("play_btn").addEventListener("click", event => {
     gol.tick();
     paint();
     count++;
-    extra++;
+//    extra++;
   }
   setInterval(step, 300);
   // TODO: Start playing by calling `tick` and paint

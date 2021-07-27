@@ -1,4 +1,4 @@
-const width = 30;
+const width = 40;
 const height = 30; // width and height dimensions of the board
 
 /**
@@ -97,13 +97,15 @@ document.getElementById("step_btn").addEventListener("click", event => {
   paint();
 });
 
-document.getElementById("play_btn").addEventListener("click", event => {
-  function step (){
-    gol.tick();
-    paint();
-    count++;
+function step (){
+  gol.tick();
+  paint();
+  count++;
 //    extra++;
-  }
+}
+
+document.getElementById("play_btn").addEventListener("click", event => {
+  
   setInterval(step, 400);
   // TODO: Start playing by calling `tick` and paint
   // repeatedly every fixed time interval.
@@ -140,5 +142,6 @@ document.getElementById("fun_btn").addEventListener("click", event => {
   });
   count = 0;
   extra = 1;
-  paint();
+  
+  setInterval(step, 400);
 });

@@ -9,17 +9,21 @@
   <script src="main.js" defer></script>
 </head>
 
+
 <body>
-  <div id="container">
+  <div id='top'>
     <h1>Game of Life</h1>
-    <table id='board'></table>
-    
+    <button id='random_btn' class='button'><strong>Randomize Board</strong></button>
+    <br>
+    <button id='fun_btn' class='button'><strong></strong>Click for Fun</strong></button>
+  </div>
+  <div id="container">
     <div id='control_panel'>
       <button id='step_btn' class='button'>Step</button>
-      <button id='play_btn' class='button'>Play</button>
-      <button id='random_btn' class='button'>Randomize Board</button>
+      <button id='play_btn' class='button'>Auto-Step</button>
       <button id='clear_btn' class='button'>Clear</button>
     </div>
+    <table id='board'></table>
     
     <footer>
       <p>Built by Corinne at <a href="http://www.fullstackacademy.com/">Fullstack Academy</a></p>

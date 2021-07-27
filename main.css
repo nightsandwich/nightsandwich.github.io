@@ -2,11 +2,12 @@
 body {
   font-family: Futura, Helvetica, Arial, sans-serif;
   color: black;
-  background-image: url('images.jpeg'); 
+  background-image: url('images.jpeg');
+   
 }
 
 h1 {
-  font-weight: normal;
+  font-size: 3em;
 }
 
 #container {
@@ -26,7 +27,7 @@ h1 {
 }
 
 td.darker{
-  background-color: #fd0505;
+  background-color: black;
 }
 
 td.darker1 {
@@ -60,19 +61,38 @@ td.darker9 {
 #control_panel {
   margin: 10px 0 50px 0;
 }
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+#top > .button {
+  padding: 0.85em 1em;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: rgba(10, 68, 175, 0.61);
+}
 
-.button {
+#random_btn{
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+
+#container .button {
   padding: 0.85em 1em;
   border: 2px solid black;
   border-radius: 3px;
   font-size: 0.9em;
   text-align: center;
-  background-color: rgb(71, 30, 255);
-  color: #fefefe; 
+  background-color: rgba(236, 201, 47, 0.658);
+  color: black;
 }
 
 .button:hover, .button:focus {
-  background-color: #ff0457;
+  background-color: #04b8ff;
+  
+  font-weight: 900;
 }
 
 .button:focus {

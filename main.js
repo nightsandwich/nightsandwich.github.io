@@ -1,5 +1,5 @@
-const width = 40;
-const height = 40; // width and height dimensions of the board
+const width = 30;
+const height = 30; // width and height dimensions of the board
 
 /**
  * Create a Game of Life instance
@@ -50,7 +50,7 @@ const paint = () => {
 
     if (gol.board[row][col] === 1){
       tds[i].className = 'darker';
-      if (count > 2){
+      if (count > 1){
         tds[i].className = 'darker' + String(extra);
         if (extra === 9) extra = 1;
         else extra++;
@@ -60,28 +60,6 @@ const paint = () => {
   }
 
 
-  /*let cells = document.getElementsByTagName('td');
-  cells = [...cells];
-  cells.forEach(cell => {
-    const row = cell.dataset.row;
-    const col = cell.dataset.col;
-
-    if (gol[row][col] === 1){
-      cell.className = 'alive';
-    } else cell.classList.remove('alive');
-  });*/
-
-//  for (let i = 0; i < height; i++){
-//    for (let j = 0; j < width; j++){
-//      let cell = document.querySelector(`[data-row=${String(i)}][data-col=${String(j)}]`);
-
-//      if (gol[i][j] === 1){
-//        cell.className='alive';
-//      } else {
-//        cell.classList.remove('alive');
-//      }
-//    }
-//  }
   
   // TODO:
   //   1. For each <td> in the table:
@@ -126,7 +104,7 @@ document.getElementById("play_btn").addEventListener("click", event => {
     count++;
 //    extra++;
   }
-  setInterval(step, 300);
+  setInterval(step, 400);
   // TODO: Start playing by calling `tick` and paint
   // repeatedly every fixed time interval.
   // HINT:
@@ -146,9 +124,21 @@ document.getElementById("random_btn").addEventListener("click", event => {
 
 document.getElementById("clear_btn").addEventListener("click", event => {
   // TODO: Clear the board and paint
-  gol.board.forEach(row => {
-    row.splice(0,width,0);
+  gol.board.forEach((row,idx) => {
+    gol.board[idx].fill(0);
   });
   count = 0;
+  extra = 1;
+  paint();
+});
+
+document.getElementById("fun_btn").addEventListener("click", event => {
+  gol.board.forEach((row,idx) => {
+    if (idx % 2) {
+      gol.board[idx].fill(1);
+    }
+  });
+  count = 0;
+  extra = 1;
   paint();
 });

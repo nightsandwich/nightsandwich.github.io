@@ -126,9 +126,11 @@ document.getElementById("random_btn").addEventListener("click", event => {
 
 document.getElementById("clear_btn").addEventListener("click", event => {
   // TODO: Clear the board and paint
-  gol.board.forEach((row,idx) => {
-    gol.board[idx].fill(0);
-  });
+  const newBoard = gol.makeBoard();
+  gol.board = newBoard;
+  //gol.board.forEach((row,idx) => {
+  //  gol.board[idx].fill(0);
+  //});
   count = 0;
   extra = 1;
   paint();

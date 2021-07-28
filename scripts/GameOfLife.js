@@ -84,6 +84,7 @@ class GameOfLife {
         }
       }
     }
+    this.board = newBoard;
     
 
     
@@ -96,6 +97,5 @@ class GameOfLife {
     // 1. Count alive neighbors for all cells
     // 2. Set the next state of all cells in newBoard,
     // based on their current alive neighbors
-    this.board = newBoard;
   }
 }

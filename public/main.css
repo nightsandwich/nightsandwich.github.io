@@ -1,0 +1,140 @@
+
+body {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  color: black;
+  background-image: url('images.jpeg');  
+}
+#instructions > h3{
+  margin: 0;
+  font-weight: normal;
+}
+
+#top > #instructions{
+  color: black;
+  font-size: 15px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.589);
+  border-radius: 8px;
+}
+
+#top > #title {
+  font-size: 2em;
+  padding: 0;
+  
+  border-radius: 3px;
+}
+#title > h1 {
+  margin: 0;
+}
+#title >h2 {
+  margin: 0;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#board{
+  border-collapse: collapse;
+}
+.crazy_colors {
+  font-size: 70%;
+  padding-top: 1em;
+}
+
+#board td{
+  border: 3px dotted rgba(0, 0, 0, 0.438);
+  width: 18px;
+  height: 18px;
+}
+
+td.darker{
+  background-color: black;
+}
+
+td.darker1 {
+  background-color: #fd6005;
+}
+td.darker2 {
+  background-color: #fde405;
+}
+td.darker3 {
+  background-color: #75fd05;
+}
+td.darker4 {
+  background-color: #05fd3b;
+}
+td.darker5 {
+  background-color: #05f5fd;
+}
+td.darker6 {
+  background-color: #055cfd;
+}
+td.darker7 {
+  background-color: #6405fd;
+}
+td.darker8 {
+  background-color: #f505fd;
+}
+td.darker9 {
+  background-color: #fd0579;
+}
+
+#control_panel > button{
+  margin: 1em;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+#control_panel {
+  display: flex;
+  justify-content: center;
+}
+
+#top > .button {
+  padding: 0.85em 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  background-color: rgba(10, 68, 175, 0.61);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#random_btn{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+#fun_btn, #yay_btn{
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  border-radius: 3px; 
+}
+
+#control_panel > .button {
+  padding: 0.85em 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: rgba(247, 36, 36, 0.521);
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover, .button:focus {
+  background-color: #04b8ff;
+  
+  font-weight: 900;
+}
+
+.button:focus {
+  outline: dashed 1px black;
+}

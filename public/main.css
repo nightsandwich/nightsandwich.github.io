@@ -7,11 +7,13 @@ body {
 #instructions > h3{
   margin: 0;
   font-weight: normal;
+  text-align: center;
 }
 
 #top > #instructions{
   color: black;
   font-size: 15px;
+  padding: 1em 1em 0 1em;
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: rgba(255, 255, 255, 0.589);
@@ -31,7 +33,17 @@ body {
   margin: 0;
   text-align: center;
 }
-
+#fun{
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+#fun > button {
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  background-color: rgba(10, 68, 175, 0.61);
+  border: 3px solid black;
+}
 #container {
   display: flex;
   align-items: center;
@@ -96,6 +108,7 @@ td.darker9 {
 #control_panel {
   display: flex;
   justify-content: center;
+  
 }
 
 #top > .button {
@@ -103,10 +116,13 @@ td.darker9 {
   border: 3px solid black;
   border-radius: 3px;
   background-color: rgba(10, 68, 175, 0.61);
-  font-size: 15px;
+  font-size: px;
   font-weight: bold;
 }
-
+#top > #clear_btn{
+  background-color: rgba(247, 36, 36, 0.815);
+  font-size: 18px;
+}
 #random_btn{
   font-size: 15px;
   color: white;

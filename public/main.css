@@ -154,7 +154,10 @@ td.darker9 {
   #title{
     font-size:x-small;
   }
-  body{
+  #instructions p{
     font-size:xx-small;
+  }
+  button{
+    font-size:x-small;
   }
 }

@@ -9,6 +9,11 @@ body {
   font-weight: normal;
   text-align: center;
 }
+#instructions > h4{
+  margin-top: 1em;
+  font-weight: normal;
+  text-align: center;
+}
 
 #top > #instructions{
   color: black;
@@ -21,29 +26,19 @@ body {
 }
 
 #top > #title {
-  font-size: 2em;
   padding: 0;
-  
   border-radius: 3px;
 }
 #title > h1 {
   margin: 0;
+  text-align: center;
 }
-#title >h2 {
+#title > h4 {
   margin: 0;
   text-align: center;
 }
-#fun{
-  display: flex;
-  padding: 1em;
-  justify-content: center;
-}
-#fun > button {
-  padding: 10px;
-  margin: 0px 10px 0px 10px;
-  background-color: rgba(10, 68, 175, 0.61);
-  border: 3px solid black;
-}
+
+
 #container {
   display: flex;
   align-items: center;
@@ -108,7 +103,7 @@ td.darker9 {
 #control_panel {
   display: flex;
   justify-content: center;
-  
+  align-items: center;
 }
 
 #top > .button {
@@ -128,29 +123,70 @@ td.darker9 {
   color: white;
   text-align: center;
 }
-#fun_btn, #yay_btn{
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-  border-radius: 3px; 
+
+#pause-clear > button {
+  margin: 1em;
+  padding: 0.85em 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+}
+#pause_btn {
+  background-color: rgba(255, 13, 13, 0.61);
+}
+#clear_btn {
+  background-color: rgba(247, 107, 107, 0.61);
+}
+#step_btn {
+  background-color: rgba(88, 231, 100, 0.61);
+}
+#play_btn {
+  background-color: rgba(3, 180, 18, 0.61);
+}
+#random_btn {
+  background-color: rgba(248, 252, 29, 0.582);
 }
 
+#pause_btn:hover {
+  background-color: rgba(248, 6, 216, 0.623);
+}
+#clear_btn:hover {
+  background-color: rgba(248, 6, 216, 0.623);
+}
+#step_btn:hover {
+  background-color: rgba(248, 6, 216, 0.623);
+}
+#play_btn:hover {
+  background-color: rgba(248, 6, 216, 0.623);
+}
+#random_btn:hover {
+  background-color: rgba(248, 6, 216, 0.623);
+}
+
+#nope{
+  display: flex;
+  justify-content:space-around;
+}
+#nope > button {
+  font-size: 20px;
+  margin: 1em;
+  padding: 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  background-color: rgba(10, 68, 175, 0.61);
+  font-weight: bold;
+}
+#nope > button:hover {
+  background-color: black;
+  color: white;
+}
 #control_panel > .button {
   padding: 0.85em 1em;
   border: 3px solid black;
   border-radius: 3px;
   font-size: 0.9em;
   text-align: center;
-  background-color: rgba(247, 36, 36, 0.521);
   color: black;
   font-weight: bold;
 }
 
-.button:hover, .button:focus {
-  background-color: #04b8ff;
-  
-  font-weight: 900;
-}
-
-.button:focus {
-  outline: dashed 1px black;
-}

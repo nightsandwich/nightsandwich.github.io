@@ -44,12 +44,13 @@ let count = 0;
 let extra = 1;
 
 const paint = () => { 
-  
+  let livingCells = 0;
   for (let i = 0; i < tds.length; i++){
     const row = tds[i].dataset.row;
     const col = tds[i].dataset.col; 
 
     if (gol.board[row][col] === 1){
+//      livingCells++;
       tds[i].classList = 'darker';
       if (count > 1){
         tds[i].classList = 'darker' + String(extra);
@@ -57,9 +58,8 @@ const paint = () => {
         else extra++;
       }
     } else tds[i].classList = '';
-    
+//    console.log(livingCells);
   }
-
 
   
   // TODO:
@@ -148,6 +148,10 @@ document.getElementById("clear_btn").addEventListener("click", event => {
   extra = 1;
   paint();
 });
+
+document.getElementById('pause_btn').addEventListener('click', event => {
+  stopPlay();
+})
 
 document.getElementById("fun_btn").addEventListener("click", event => {
   gol.board.forEach((row,idx) => {

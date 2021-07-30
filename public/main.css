@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-weight: normal;
   text-align: center;
+  font-size: 15px;
 }
 #instructions > h4{
   margin-top: 1em;
@@ -17,7 +18,6 @@ body {
 
 #top > #instructions{
   color: black;
-  font-size: 15px;
   padding: 1em 1em 0 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -32,12 +32,13 @@ body {
 #title > h1 {
   margin: 0;
   text-align: center;
+  font-size: 25px;
 }
 #title > h4 {
   margin: 0;
   text-align: center;
+  font-size: 15px;
 }
-
 
 #container {
   display: flex;

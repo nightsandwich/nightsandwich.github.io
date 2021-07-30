@@ -1,43 +1,29 @@
 
 body {
-  font-family: Futura, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   color: black;
   background-image: url('images.jpeg');  
 }
-#instructions > h3{
+#instructions > p {
   margin: 0;
-  font-weight: normal;
   text-align: center;
-  font-size: 15px;
-}
-#instructions > h4{
-  margin-top: 1em;
-  font-weight: normal;
-  text-align: center;
+  font-size: .9em;
 }
 
 #top > #instructions{
-  color: black;
   padding: 1em 1em 0 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: rgba(255, 255, 255, 0.589);
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 3em;
+  box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.473); 
 }
 
-#top > #title {
-  padding: 0;
-  border-radius: 3px;
-}
-#title > h1 {
+#title > p {
   margin: 0;
   text-align: center;
-  font-size: 25px;
-}
-#title > h4 {
-  margin: 0;
-  text-align: center;
-  font-size: 15px;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #container {
@@ -50,16 +36,87 @@ body {
 #board{
   border-collapse: collapse;
 }
-.crazy_colors {
-  font-size: 70%;
-  padding-top: 1em;
-}
 
 #board td{
   border: 3px dotted rgba(0, 0, 0, 0.438);
   width: 18px;
   height: 18px;
 }
+
+#control_panel > button{
+  margin: 1em;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+#control_panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#control_panel > .button {
+  padding: 0.85em 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  font-size: 0.9em;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+#random_btn{
+  color: white;
+  text-align: center;
+}
+
+#pause-clear > button {
+  margin: 1em;
+  padding: 0.85em 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+#pause_btn {
+  background-color: rgba(255, 13, 13, 0.61);
+}
+#clear_btn {
+  background-color: rgba(247, 107, 107, 0.61);
+}
+#step_btn {
+  background-color: rgba(88, 231, 100, 0.61);
+}
+#play_btn {
+  background-color: rgba(3, 180, 18, 0.61);
+}
+#random_btn {
+  background-color: rgba(248, 6, 216, 0.623);
+}
+#control_panel button:hover{
+  background-color: rgba(248, 252, 29, 0.582);
+}
+
+#nope{
+  display: flex;
+  justify-content:space-around;
+}
+#nope > button {
+  font-size: 1em;
+  margin: 1em;
+  padding: 1em;
+  border: 3px solid black;
+  border-radius: 3px;
+  background-color: rgba(10, 68, 175, 0.61);
+  font-weight: bold;
+}
+#nope > button:hover {
+  background-color: black;
+  color: white;
+}
+
 
 td.darker{
   background-color: black;
@@ -93,101 +150,11 @@ td.darker9 {
   background-color: #fd0579;
 }
 
-#control_panel > button{
-  margin: 1em;
+@media screen and (max-width: 700px) {
+  #title{
+    font-size:x-small;
+  }
+  body{
+    font-size:xx-small;
+  }
 }
-#top {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
-#control_panel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#top > .button {
-  padding: 0.85em 1em;
-  border: 3px solid black;
-  border-radius: 3px;
-  background-color: rgba(10, 68, 175, 0.61);
-  font-size: px;
-  font-weight: bold;
-}
-#top > #clear_btn{
-  background-color: rgba(247, 36, 36, 0.815);
-  font-size: 18px;
-}
-#random_btn{
-  font-size: 15px;
-  color: white;
-  text-align: center;
-}
-
-#pause-clear > button {
-  margin: 1em;
-  padding: 0.85em 1em;
-  border: 3px solid black;
-  border-radius: 3px;
-  font-weight: bold;
-}
-#pause_btn {
-  background-color: rgba(255, 13, 13, 0.61);
-}
-#clear_btn {
-  background-color: rgba(247, 107, 107, 0.61);
-}
-#step_btn {
-  background-color: rgba(88, 231, 100, 0.61);
-}
-#play_btn {
-  background-color: rgba(3, 180, 18, 0.61);
-}
-#random_btn {
-  background-color: rgba(248, 252, 29, 0.582);
-}
-
-#pause_btn:hover {
-  background-color: rgba(248, 6, 216, 0.623);
-}
-#clear_btn:hover {
-  background-color: rgba(248, 6, 216, 0.623);
-}
-#step_btn:hover {
-  background-color: rgba(248, 6, 216, 0.623);
-}
-#play_btn:hover {
-  background-color: rgba(248, 6, 216, 0.623);
-}
-#random_btn:hover {
-  background-color: rgba(248, 6, 216, 0.623);
-}
-
-#nope{
-  display: flex;
-  justify-content:space-around;
-}
-#nope > button {
-  font-size: 20px;
-  margin: 1em;
-  padding: 1em;
-  border: 3px solid black;
-  border-radius: 3px;
-  background-color: rgba(10, 68, 175, 0.61);
-  font-weight: bold;
-}
-#nope > button:hover {
-  background-color: black;
-  color: white;
-}
-#control_panel > .button {
-  padding: 0.85em 1em;
-  border: 3px solid black;
-  border-radius: 3px;
-  font-size: 0.9em;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-

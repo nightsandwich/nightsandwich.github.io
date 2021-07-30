@@ -13,29 +13,25 @@
 <body>
   <div id='top'>
     <div id='title'>
-      <h1>Life in Box City</h1>
-      <h4>--Conway's <a href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'>Game of Life</a> in action--</h4>
+      <p>Life in Box City</p>
+      <smaller>Conway's <a href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'>Game of Life</a> in action</smaller>
     </div>
     <div id='instructions'>
-      <h3>Click a cell to give it life. Click it again to kill it.</h3>
-      <h3>Click 'I'm Lazy' to randomly populate the city.</h3>
-      <h3>Click 'Iterate' to see the population after 1 day.</h3> 
-      <h3>Click 'Auto-Play' to watch Box City evolve, die, or live forever!</h3>
+      <p>Click a cell to make it alive/dead. <strong>DON'T CARE</strong> will pick for you.</p>
+      <p><strong>ITERATE ONCE</strong> will display one day of evolution.</p> 
+      <p><strong>AUTO-PLAY</strong> will display Box City's full evolution ending in death or immortality!</p>
       <div id='control_panel'>
-        <button id='step_btn' class='button'>Iterate</button>
-        <button id='play_btn' class='button'>AUTO-PLAY<div class='crazy_colors'>WITH CRAZY COLORS</div></button>
-        <button id='random_btn' class='button'><strong>I'm Lazy/Adventurous</strong></button>
+        <button id='step_btn' class='button'>ITERATE ONCE</button>
+        <button id='play_btn' class='button'>AUTO-PLAY<br>WITH CRAZY COLORS</button>
+        <button id='random_btn' class='button'>DON'T CARE</button>
         <div id='pause-clear'>
-          <button id='pause_btn' class='button'>Pause</button>
-          <button id='clear_btn' class='button'>Clear</button>
+          <button id='pause_btn' class='button'>PAUSE</button>
+          <button id='clear_btn' class='button'>RESET</button>
         </div>
       </div>
-      <h4>Click 'Pause' to stop Auto-Play and 'Clear' to clear the board and start over.</h4>
+      <p><strong>PAUSE</strong> will stop <strong>AUTO-PLAY</strong>. <br>Don't forget to <strong>RESET</strong> the board before each game.</p>
     </div>
   </div>
-    
-    
-    
       <div id='nope'>
         <button id='fun_btn' class='button'><strong></strong>DO NOT CLICK</strong></button>
         <button id='yay_btn' class='button'><strong></strong>NOPE</strong></button> 

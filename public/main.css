@@ -117,9 +117,12 @@ body {
   color: white;
 }
 
-
+td:hover {
+  background-color: rgba(255, 255, 255, 0.788);
+}
 td.darker{
-  background-color: black;
+  
+  background-color: rgba(0, 0, 0, 0.651);
 }
 
 td.darker1 {

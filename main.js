@@ -52,7 +52,7 @@ const paint = () => {
     if (gol.board[row][col] === 1){
 //      livingCells++;
       tds[i].classList = 'darker';
-      if (count > 1){
+      if (count > 0){
         tds[i].classList = 'darker' + String(extra);
         if (extra === 9) extra = 1;
         else extra++;
